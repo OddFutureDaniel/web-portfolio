@@ -1,15 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/errvv.png">
-  <HelloWorld/>
+  <NavTop />
+  <MainSection />
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavTop from './components/NavTop.vue'
+import MainSection from './components/MainSection.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavTop,
+    MainSection
   }
 }
 </script>
@@ -21,6 +24,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  margin: 0px;
+
 }
 </style>
