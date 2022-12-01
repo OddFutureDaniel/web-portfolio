@@ -25,7 +25,7 @@
     flex-direction: column;
     height: auto;
     justify-content: space-evenly;
-    margin-top: 8em;
+    padding-top: 5em;
 
 }
 

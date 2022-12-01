@@ -7,7 +7,7 @@
             </div>
             <AboutPage id="about" />
             <SkillsPage id="skills" />
-            <ContactMe id="contact"/>
+            <ContactMe id="contact" />
         </div>
     </div>
 </template>
@@ -42,10 +42,8 @@ export default {
     justify-content: center;
     width: 100%;
     height: auto;
-
     margin: 0;
     border: 0;
-    padding-top: 3rem;
 }
 
 .main__section {
@@ -53,7 +51,6 @@ export default {
     width: 80%;
     height: auto;
     gap: 0px;
-
 }
 
 .home__title {
@@ -61,7 +58,8 @@ export default {
     text-transform: uppercase;
     font-style: normal;
     margin: 0;
-    padding: 4em 0;
+    padding-top: 6em;
+    padding-bottom:  4em ;
 }
 
 .home__title h1 {

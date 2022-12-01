@@ -52,7 +52,7 @@
 .skills__container {
     display: flex;
     flex-direction: column;
-    margin-top: 8em;
+    padding-top: 5em;
 }
 
 .skill {

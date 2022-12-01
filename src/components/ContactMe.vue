@@ -4,13 +4,16 @@
         <form class="contact__form" ref="form" @submit.prevent="sendEmail">
             <div>
                 <label>Name</label>
-                <input type="text" name="user_name">
+                <input class="input__area" type="text" name="user_name">
                 <label>Email</label>
-                <input type="email" name="user_email">
+                <input class="input__area" type="email" name="user_email">
             </div>
-            <label>Message</label>
-            <textarea name="message"></textarea>
-            <input type="submit" value="Send">
+            <div>
+                <label>Message</label>
+                <textarea class="input__area" name="message"></textarea>
+                
+            </div>
+            <input class="submit__box" type="submit" value="Send">
         </form>
     </div>
 
@@ -34,16 +37,31 @@ export default {
 </script>
 
 <style scoped>
-.contact__container{
-    padding-left: 7rem;
-    padding-right: 7rem;
-}
+.contact__container {}
+
 .contact__form {
     display: flex;
     flex-direction: column;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    width: 100%;
+    padding-top:4em;
+    padding-bottom:4em;
+    padding-left:5em;
+    padding-right:5em;
+    width: auto;
+    align-items: center;
 
+}
+
+.input__area{
+    border-radius: 5px;
+    background-color: #464d5d;
+    color: white;
+    border-style: none;
+}
+
+.submit__box{
+    width: 15%;
+    min-width: 50px;
+    max-width: 25%;
+    
 }
 </style>
