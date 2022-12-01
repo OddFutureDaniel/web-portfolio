@@ -10,10 +10,10 @@
 
         </ul>
         <ul class="options">
-            <a class="option" href="#">Home</a>
+            <a class="option" href="#home">Home</a>
             <a class="option" href="#about">About</a>
             <a class="option" href="#skills">Skills</a>
-            <a class="option" href="#">Contact</a>
+            <a class="option" href="#contact">Contact</a>
         </ul>
     </nav>
 

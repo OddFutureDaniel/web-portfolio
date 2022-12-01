@@ -1,5 +1,11 @@
 # web-portfolio
 
+## Technologies used
+
+VueJS making use of HTML, CSS and Javascript
+FontAwesome
+EmailJS
+
 ## Project setup
 ```
 npm install

@@ -29,9 +29,6 @@
 
 }
 
-.about__text{
-    
 
-}
 </style>
 

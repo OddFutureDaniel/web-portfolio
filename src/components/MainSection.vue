@@ -1,21 +1,13 @@
 <template>
     <div class="container">
         <div class="main__section">
-            <div class="home__title">
+            <div class="home__title" id="home">
                 <h1>Daniel Rogerson</h1>
                 <h3>Frontend Web Developer</h3>
             </div>
-            <AboutPage id="about"/>
-            <SkillsPage id="skills"/>
-            <!-- <div id="item-0">
-            <NavigationButtons />
-        </div>
-        <div id="item-1">
-            <AboutPage />
-        </div>
-        <div id="item-2">
-            <SkillsPage />
-        </div> -->
+            <AboutPage id="about" />
+            <SkillsPage id="skills" />
+            <ContactMe id="contact"/>
         </div>
     </div>
 </template>
@@ -23,6 +15,7 @@
 <script>
 import AboutPage from './AboutPage.vue'
 import SkillsPage from './SkillsPage.vue'
+import ContactMe from './ContactMe.vue'
 // import NavigationButtons from './NavigationButtons.vue'
 
 
@@ -37,7 +30,8 @@ export default {
     components: {
         AboutPage,
         // NavigationButtons,
-        SkillsPage
+        SkillsPage,
+        ContactMe
     }
 }
 </script>
@@ -48,7 +42,7 @@ export default {
     justify-content: center;
     width: 100%;
     height: auto;
-    
+
     margin: 0;
     border: 0;
     padding-top: 3rem;
@@ -67,12 +61,12 @@ export default {
     text-transform: uppercase;
     font-style: normal;
     margin: 0;
-    padding: 2em 0;
+    padding: 4em 0;
 }
 
 .home__title h1 {
     font-weight: 100;
-    font-size: 7vw;
+    font-size: 7.5vw;
     line-height: 1;
     margin-block-start: 0em;
     margin-block-end: 0em;
