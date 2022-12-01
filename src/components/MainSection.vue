@@ -1,70 +1,120 @@
 <template>
-    <div class="main__section">
-        <div id="item-0">
+    <div class="container">
+        <div class="main__section">
+            <div class="home__title">
+                <h1>Daniel Rogerson</h1>
+                <h3>Frontend Web Developer</h3>
+            </div>
+            <AboutPage id="about"/>
+            <SkillsPage id="skills"/>
+            <!-- <div id="item-0">
             <NavigationButtons />
         </div>
         <div id="item-1">
             <AboutPage />
         </div>
-        <div id="item-2">differing api things?</div>
+        <div id="item-2">
+            <SkillsPage />
+        </div> -->
+        </div>
     </div>
 </template>
 
 <script>
 import AboutPage from './AboutPage.vue'
-import NavigationButtons from './NavigationButtons.vue'
+import SkillsPage from './SkillsPage.vue'
+// import NavigationButtons from './NavigationButtons.vue'
+
+
 
 export default {
+    data() {
+        return {
+            activeComponent: 'AboutPage',
+        };
+    },
     name: 'App',
     components: {
         AboutPage,
-        NavigationButtons
+        // NavigationButtons,
+        SkillsPage
     }
 }
 </script>
 
 <style scoped>
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    
+    margin: 0;
+    border: 0;
+    padding-top: 3rem;
+}
+
 .main__section {
     display: grid;
-
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    height: 100%;
+    width: 80%;
+    height: auto;
     gap: 0px;
-
 
 }
 
+.home__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    margin: 0;
+    padding: 2em 0;
+}
+
+.home__title h1 {
+    font-weight: 100;
+    font-size: 7vw;
+    line-height: 1;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.home__title h3 {
+    margin-block-end: 0em;
+
+}
+
+/** Navigation buttons section */
 #item-0 {
 
-    background-color: #F76756;
+    background-color: rgb(234, 219, 208);
+
     grid-row-start: 3;
     grid-column-start: 4;
 
     grid-row-end: 4;
     grid-column-end: 6;
-
 }
 
+/** Main section */
 #item-1 {
 
-    background-color: #D99968;
+    background-color: rgb(234, 219, 208);
+    height: auto;
     grid-row-start: 1;
     grid-column-start: 1;
 
     grid-row-end: 4;
     grid-column-end: 4;
-
 }
 
+/** Api/Filler section */
 #item-2 {
 
-    background-color: #BE6CEA;
+    background-color: rgb(234, 219, 208);
     grid-row-start: 1;
     grid-column-start: 4;
 
     grid-row-end: 3;
     grid-column-end: 6;
-
 }
 </style>

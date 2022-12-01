@@ -23,13 +23,14 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  height: 100vh;
-  overflow: hidden;
+  color: #b1a4a4;
+  height: auto;
+  overflow: scroll;
+
 }
 
 body {
   margin: 0px;
-
+  background-color: #222733;
 }
 </style>

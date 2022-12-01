@@ -11,8 +11,8 @@
         </ul>
         <ul class="options">
             <a class="option" href="#">Home</a>
-            <a class="option" href="#">About</a>
-            <a class="option" href="#">Skills</a>
+            <a class="option" href="#about">About</a>
+            <a class="option" href="#skills">Skills</a>
             <a class="option" href="#">Contact</a>
         </ul>
     </nav>
@@ -25,15 +25,16 @@
 
 <style scoped>
 .nav__container {
+    position: fixed;
+    min-width: 100vw;
     display: flex;
-    height: 72px;
-
+    height: 3rem;
+    background-color: #464d5d;
     margin: 0px;
-    margin-left: 5vw;
-    margin-right: 5vw;
 
-    justify-content: space-between;
-
+    justify-content: center;
+    box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
+    z-index: 999;
 }
 
 .social__links {
@@ -61,6 +62,8 @@
 
 .option {
     text-decoration: none;
+    color: #b1a4a4;
+    font-weight: 200;
 }
 
 .social__link {
@@ -68,6 +71,7 @@
     width: 30px;
     height: 30px;
     align-items: center;
+    color: #b1a4a4;
 }
 
 .nav__icon {
