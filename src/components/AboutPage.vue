@@ -26,6 +26,7 @@
     height: auto;
     justify-content: space-evenly;
     padding-top: 5em;
+    padding-bottom: 4em;
 
 }
 

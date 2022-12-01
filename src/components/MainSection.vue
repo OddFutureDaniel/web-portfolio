@@ -16,7 +16,7 @@
 import AboutPage from './AboutPage.vue'
 import SkillsPage from './SkillsPage.vue'
 import ContactMe from './ContactMe.vue'
-// import NavigationButtons from './NavigationButtons.vue'
+
 
 
 
@@ -29,7 +29,6 @@ export default {
     name: 'App',
     components: {
         AboutPage,
-        // NavigationButtons,
         SkillsPage,
         ContactMe
     }

@@ -2,16 +2,20 @@
     <div class="contact__container">
         <h1>Get in touch</h1>
         <form class="contact__form" ref="form" @submit.prevent="sendEmail">
-            <div>
-                <label>Name</label>
-                <input class="input__area" type="text" name="user_name">
-                <label>Email</label>
-                <input class="input__area" type="email" name="user_email">
+            <div class="name__email">
+                <div>
+                    <label>Name</label>
+                    <input class="input__area" type="text" name="user_name">
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input class="input__area" type="email" name="user_email">
+                </div>
             </div>
-            <div>
+            <div class="message__area">
                 <label>Message</label>
-                <textarea class="input__area" name="message"></textarea>
-                
+                <textarea class="message__input__area" name="message"></textarea>
+
             </div>
             <input class="submit__box" type="submit" value="Send">
         </form>
@@ -37,31 +41,62 @@ export default {
 </script>
 
 <style scoped>
-.contact__container {}
+.contact__container {
+    padding-top: 9em;
+    padding-bottom: 6em;
+}
 
 .contact__form {
     display: flex;
     flex-direction: column;
-    padding-top:4em;
-    padding-bottom:4em;
-    padding-left:5em;
-    padding-right:5em;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    padding-left: 5em;
+    padding-right: 5em;
     width: auto;
     align-items: center;
 
 }
 
-.input__area{
+.name__email {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+.input__area {
     border-radius: 5px;
     background-color: #464d5d;
     color: white;
     border-style: none;
 }
 
-.submit__box{
+.message__input__area{
+    border-radius: 5px;
+    background-color: #464d5d;
+    color: white;
+    border-style: none;
+    width: 70%;
+    height: 8em;
+    resize: none;
+}
+
+.message__area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+}
+
+.submit__box {
     width: 15%;
     min-width: 50px;
     max-width: 25%;
-    
+
+}
+
+label{
+    padding-right: 0.2em;
 }
 </style>
