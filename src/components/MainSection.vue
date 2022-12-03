@@ -8,6 +8,7 @@
             <AboutPage id="about" />
             <SkillsPage id="skills" />
             <ContactMe id="contact" />
+
         </div>
     </div>
 </template>
@@ -16,9 +17,6 @@
 import AboutPage from './AboutPage.vue'
 import SkillsPage from './SkillsPage.vue'
 import ContactMe from './ContactMe.vue'
-
-
-
 
 export default {
     data() {
@@ -58,7 +56,7 @@ export default {
     font-style: normal;
     margin: 0;
     padding-top: 6em;
-    padding-bottom:  4em ;
+    padding-bottom: 4em;
 }
 
 .home__title h1 {

@@ -79,5 +79,10 @@
     height: auto;
     align-items: center;
 }
+
+.option:active{
+    transform: scale(0.95);
+  
+}
 </style>
 

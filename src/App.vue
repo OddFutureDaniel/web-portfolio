@@ -1,18 +1,21 @@
 <template>
   <NavTop />
   <MainSection />
+  <FooterPage />
 
 </template>
 
 <script>
 import NavTop from './components/NavTop.vue'
 import MainSection from './components/MainSection.vue'
+import FooterPage from './components/FooterPage.vue'
 
 export default {
   name: 'App',
   components: {
     NavTop,
-    MainSection
+    MainSection,
+    FooterPage
   }
 }
 </script>

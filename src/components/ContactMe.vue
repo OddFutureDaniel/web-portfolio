@@ -3,21 +3,24 @@
         <h1>Get in touch</h1>
         <form class="contact__form" ref="form" @submit.prevent="sendEmail">
             <div class="name__email">
-                <div class="name__area">
-                    <label>Name</label>
-                    <input class="input__area" type="text" name="user_name">
+                <div class="name__container">
+                    <label for="user_name">Name<Span style="color: red">*</Span></label>
+                    <input class="input__container" type="text" name="user_name" required>
                 </div>
                 <div>
-                    <label>Email</label>
-                    <input class="input__area" type="email" name="user_email">
+                    <label for="user_email">Email<Span style="color: red">*</Span></label>
+                    <input class="input__container" type="email" name="user_email" required>
                 </div>
             </div>
-            <div class="message__area">
-                <label>Message</label>
-                <textarea class="message__input__area" name="message"></textarea>
+            <div class="message__container">
+                <label for="message">Message<Span style="color: red">*</Span></label>
+                <textarea class="message__input" name="message" required></textarea>
 
             </div>
-            <input class="submit__box" type="submit" value="Send">
+            <div class="submit__container">
+                <input class="submit__box" type="submit" value="Send">
+            </div>
+
         </form>
     </div>
 
@@ -27,14 +30,27 @@
 import emailjs from '@emailjs/browser';
 
 export default {
+    data() {
+        return {
+            //TODO make this data private
+            serviceID: 'service_sdho7o3',
+            templateID: 'template_zsxiz5d',
+            public_key: 'OhD1BYztul7NILvKR'
+        }
+    },
     methods: {
         sendEmail() {
-            emailjs.sendForm('service_sdho7o3', 'template_zsxiz5d', this.$refs.form, 'OhD1BYztul7NILvKR')
-                .then((result) => {
-                    console.log('SUCCESS!', result.text);
-                }, (error) => {
-                    console.log('FAILED...', error.text);
-                });
+            if (this.serviceID.length === 0 || this.templateID.length === 0 || this.public_key.length === 0) {
+                console.log('Error with email provider data')
+            } else {
+                emailjs.sendForm(this.serviceID, this.templateID, this.$refs.form, this.public_key)
+                    .then((result) => {
+                        console.log('SUCCESS!', result.text);
+                    }, (error) => {
+                        console.log('FAILED...', error.text);
+                    });
+            }
+
         }
     }
 }
@@ -65,18 +81,18 @@ export default {
     width: 70%;
 }
 
-.name__area{
+.name__container {
     margin-right: 1em;
 }
 
-.input__area {
+.input__container {
     border-radius: 5px;
     background-color: #464d5d;
     color: white;
     border-style: none;
 }
 
-.message__input__area {
+.message__input {
     border-radius: 5px;
     background-color: #464d5d;
     color: white;
@@ -88,12 +104,12 @@ export default {
     max-width: 37em;
 }
 
-.message__area {
+.message__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 85%;
-    
+
 }
 
 .submit__box {
@@ -102,14 +118,32 @@ export default {
     border-radius: 10px;
     height: 3em;
     margin-top: 1em;
-    width: 20%;
-    min-width: 50px;
-    max-width: 25%;
+    min-width: 80px;
+    max-width: 12%;
     color: #b1a4a4;
-    
+
 }
 
 label {
     padding-right: 0.2em;
+}
+
+.submit__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+}
+
+input.submit__box:active {
+    transform: scale(0.95);
+    box-shadow: 3px 2px 10px 1px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 560px) {
+    .contact__form {
+        padding-left: 0em;
+        padding-right: 0em;
+    }
 }
 </style>
