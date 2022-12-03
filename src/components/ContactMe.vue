@@ -3,7 +3,7 @@
         <h1>Get in touch</h1>
         <form class="contact__form" ref="form" @submit.prevent="sendEmail">
             <div class="name__email">
-                <div>
+                <div class="name__area">
                     <label>Name</label>
                     <input class="input__area" type="text" name="user_name">
                 </div>
@@ -65,6 +65,10 @@ export default {
     width: 70%;
 }
 
+.name__area{
+    margin-right: 1em;
+}
+
 .input__area {
     border-radius: 5px;
     background-color: #464d5d;
@@ -72,7 +76,7 @@ export default {
     border-style: none;
 }
 
-.message__input__area{
+.message__input__area {
     border-radius: 5px;
     background-color: #464d5d;
     color: white;
@@ -80,23 +84,32 @@ export default {
     width: 70%;
     height: 8em;
     resize: none;
+    min-width: 22em;
+    max-width: 37em;
 }
 
-.message__area{
+.message__area {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 85%;
+    
 }
 
 .submit__box {
-    width: 15%;
+    background-color: #464d5d;
+    border-style: none;
+    border-radius: 10px;
+    height: 3em;
+    margin-top: 1em;
+    width: 20%;
     min-width: 50px;
     max-width: 25%;
-
+    color: #b1a4a4;
+    
 }
 
-label{
+label {
     padding-right: 0.2em;
 }
 </style>
