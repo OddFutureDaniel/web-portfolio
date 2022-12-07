@@ -1,6 +1,8 @@
 <template>
     <div class="contact__container">
         <h1>Get in touch</h1>
+        <p class="contact__text">Whether you'd like to discuss web development opportunities or try the world's best lemon drizzle, please get
+            in touch using the form below! </p>
         <form class="contact__form" ref="form" @submit.prevent="sendEmail">
             <div class="name__email">
                 <div class="name__container">
@@ -20,10 +22,8 @@
             <div class="submit__container">
                 <input class="submit__box" type="submit" value="Send">
             </div>
-
         </form>
     </div>
-
 </template>
   
 <script>
@@ -50,7 +50,6 @@ export default {
                         console.log('FAILED...', error.text);
                     });
             }
-
         }
     }
 }
@@ -58,8 +57,12 @@ export default {
 
 <style scoped>
 .contact__container {
-    padding-top: 9em;
-    padding-bottom: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 .contact__form {
@@ -71,7 +74,6 @@ export default {
     padding-right: 5em;
     width: auto;
     align-items: center;
-
 }
 
 .name__email {
@@ -109,7 +111,6 @@ export default {
     flex-direction: column;
     align-items: center;
     width: 85%;
-
 }
 
 .submit__box {
@@ -121,11 +122,14 @@ export default {
     min-width: 80px;
     max-width: 12%;
     color: #b1a4a4;
-
 }
 
 label {
     padding-right: 0.2em;
+}
+
+.contact__text{
+    width: 80%;
 }
 
 .submit__container {
@@ -137,7 +141,7 @@ label {
 
 input.submit__box:active {
     transform: scale(0.95);
-    box-shadow: 3px 2px 10px 1px rgba(0,0,0,0.25);
+    box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 560px) {

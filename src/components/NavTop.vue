@@ -13,6 +13,7 @@
             <a class="option" href="#home">Home</a>
             <a class="option" href="#about">About</a>
             <a class="option" href="#skills">Skills</a>
+            <a class="option" href="#portfolio">Portfolio</a>
             <a class="option" href="#contact">Contact</a>
         </ul>
     </nav>

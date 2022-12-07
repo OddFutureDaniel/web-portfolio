@@ -4,11 +4,12 @@
             <div class="home__title" id="home">
                 <h1>Daniel Rogerson</h1>
                 <h3>Frontend Web Developer</h3>
+                <img class="logo" src="../assets/errvv.png" alt="">
             </div>
             <AboutPage id="about" />
             <SkillsPage id="skills" />
+            <PortfolioPage id="portfolio" />
             <ContactMe id="contact" />
-
         </div>
     </div>
 </template>
@@ -17,7 +18,7 @@
 import AboutPage from './AboutPage.vue'
 import SkillsPage from './SkillsPage.vue'
 import ContactMe from './ContactMe.vue'
-
+import PortfolioPage from './PortfolioPage.vue'
 export default {
     data() {
         return {
@@ -28,7 +29,8 @@ export default {
     components: {
         AboutPage,
         SkillsPage,
-        ContactMe
+        ContactMe,
+        PortfolioPage
     }
 }
 </script>
@@ -44,10 +46,12 @@ export default {
 }
 
 .main__section {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     width: 80%;
     height: auto;
     gap: 0px;
+    justify-content: center;
 }
 
 .home__title {
@@ -56,7 +60,17 @@ export default {
     font-style: normal;
     margin: 0;
     padding-top: 6em;
-    padding-bottom: 4em;
+    padding-bottom: 5em;
+}
+
+.logo {
+    margin: 3em;
+    width: 200px;
+    border-radius: 200px;
+}
+
+.logo:hover{
+    transform: scaleX(-1);
 }
 
 .home__title h1 {

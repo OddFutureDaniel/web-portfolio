@@ -2,7 +2,6 @@
   <NavTop />
   <MainSection />
   <FooterPage />
-
 </template>
 
 <script>
@@ -29,7 +28,6 @@ export default {
   color: #b1a4a4;
   height: auto;
   overflow: scroll;
-
 }
 
 body {

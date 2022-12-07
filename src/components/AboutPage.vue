@@ -1,21 +1,15 @@
 <template>
     <div class="about__section">
         <h1>About Me</h1>
-        <div class="about__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, aliquam suscipit. Veniam incidunt, minima
-            ipsum doloremque iure sit iste repellat quod error nesciunt doloribus eaque dolorum fugit fuga nulla nemo
-            recusandae impedit, eveniet amet. Quae harum, deserunt natus dignissimos distinctio maiores esse voluptas
-            veritatis quasi quas.
-        </div>
         <div class="about__text">
-            Distinctio debitis excepturi, ullam odit recusandae laboriosam. Praesentium,
-            consectetur ullam illo assumenda culpa facere quasi aut magnam eius molestias provident perferendis maiores
-            voluptates unde velit sit amet, distinctio vel nisi doloremque commodi totam atque sapiente! Voluptatum
-            quibusdam sed asperiores!
+            <p>Hello, I'm Daniel, a 24 year old Web Developer and Designer who's on track to achieve a 2:1 in Computer
+                Science at Royal Holloway University of London in May '23.
+                I've had a lifelong passion for all things creative, I love creating applications, playing basketball,
+                designing and creating clothes and baking lemon drizzle's. My dream is to one day be able to combine my
+                programming and fashion skills to create garments that
+                'come alive'. I've chosen to begin my career in web development as it allows me to nurture my
+                programming skills as well as inject some creative flair into my work.</p>
         </div>
-        <div class="about__text">
-            Incidunt unde totam ratione, nostrum, modi minus perspiciatis doloremque molestias
-            qui tempora quisquam. Animi voluptate quod saepe quos totam amet omnis facere explicabo, cupiditate illo sit
-            cumque. </div>
     </div>
 </template>
 <script></script>
@@ -24,12 +18,14 @@
     display: flex;
     flex-direction: column;
     height: auto;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-top: 5em;
-    padding-bottom: 4em;
-
+    padding-bottom: 5em;
+    align-items: center;
 }
 
-
+.about__text {
+    width: 80%;
+}
 </style>
 
