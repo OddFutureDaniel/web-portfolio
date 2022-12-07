@@ -7,7 +7,6 @@
             <a class="social__link" href="https://www.linkedin.com/in/daniel-rogerson/" target="_blank">
                 <font-awesome-icon class="nav__icon" icon="fa-brands fa-linkedin" />
             </a>
-
         </ul>
         <ul class="options" id="optionsID">
             <router-link class="option" to="/Home">Home</router-link>
@@ -15,22 +14,13 @@
             <router-link class="option" to="/Skills">Skills</router-link>
             <router-link class="option" to="/Portfolio">Portfolio</router-link>
             <router-link class="option" to="/Contact">Contact</router-link>
+            <router-link class="option" to="/Supersecretpage">What's this?</router-link>
 
-
-            <!-- <a class="option" href="#home">Home</a>
-            <a class="option" href="#about">About</a>
-            <a class="option" href="#skills">Skills</a>
-            <a class="option" href="#portfolio">Portfolio</a>
-            <a class="option" href="#contact">Contact</a> -->
         </ul>
     </nav>
-
 </template>
 
-<script>
-export default {
-} 
-</script>
+<script></script>
 
 <style scoped>
 .nav__container {
@@ -40,7 +30,6 @@ export default {
     height: 3rem;
     background-color: #464d5d;
     margin: 0px;
-
     justify-content: center;
     box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 20%);
     z-index: 999;
@@ -56,7 +45,6 @@ export default {
     align-items: center;
     justify-content: space-around;
     width: 100px;
-
 }
 
 .options {
@@ -97,7 +85,6 @@ export default {
 
 .option:active {
     transform: scale(0.95);
-
 }
 </style>
 

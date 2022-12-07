@@ -15,9 +15,9 @@
                 </a>
             </div>
             <div class="card">
-                <h3>Netflix Clone</h3>
-                <a href="" target="_blank">
-                    <img src="../assets/netflixclone.png" alt="netflix clone">
+                <h3>Restaurant Website</h3>
+                <a href="https://github.com/OddFutureDaniel/theCups" target="_blank">
+                    <img src="../assets/thecups.png" alt="Restaurant Website">
                 </a>
             </div>
         </div>
@@ -54,6 +54,7 @@
 
 img {
     width: 20em;
+    height: 180px;
     border: 1px solid black;
     border-radius: 5px;
 }

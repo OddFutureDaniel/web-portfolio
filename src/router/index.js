@@ -4,6 +4,7 @@ import HomePage from "../components/HomePage.vue";
 import SkillsPage from "../components/SkillsPage.vue";
 import ContactMe from "../components/ContactMe.vue";
 import PortfolioPage from "../components/PortfolioPage.vue";
+import ExtraPage from '../components/ExtraPage.vue'
 
 const routes = [
   {
@@ -30,6 +31,10 @@ const routes = [
     path: "/contact",
     name: "Contact",
     component: ContactMe,
+  }, {
+    path: "/supersecretpage",
+    name: "Supersecretpage",
+    component: ExtraPage,
   },
 ];
 

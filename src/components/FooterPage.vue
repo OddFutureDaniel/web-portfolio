@@ -16,7 +16,6 @@
     background-color: #1b1d21;
 }
 .tagline{
-padding-left: 5em;
-
+padding-left: 2em;
 }
 </style>
