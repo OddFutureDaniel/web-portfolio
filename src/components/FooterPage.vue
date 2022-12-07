@@ -10,7 +10,7 @@
 
 <style scoped>
 .footer__container{
-    height: 10em;
+    height: 5em;
     display: flex;
     width: 100vw;
     background-color: #1b1d21;

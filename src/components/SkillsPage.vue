@@ -54,6 +54,8 @@
     flex-direction: column;
     padding-top: 5em;
     padding-bottom: 5em;
+    height: 90vh;
+
 }
 
 .skill {
@@ -98,7 +100,7 @@ h3 {
 }
 
 .vue__progress {
-    width: 65%;
+    width: 70%;
 }
 
 .react__progress {

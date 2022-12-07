@@ -9,19 +9,27 @@
             </a>
 
         </ul>
-        <ul class="options">
-            <a class="option" href="#home">Home</a>
+        <ul class="options" id="optionsID">
+            <router-link class="option" to="/Home">Home</router-link>
+            <router-link class="option" to="/About">About</router-link>
+            <router-link class="option" to="/Skills">Skills</router-link>
+            <router-link class="option" to="/Portfolio">Portfolio</router-link>
+            <router-link class="option" to="/Contact">Contact</router-link>
+
+
+            <!-- <a class="option" href="#home">Home</a>
             <a class="option" href="#about">About</a>
             <a class="option" href="#skills">Skills</a>
             <a class="option" href="#portfolio">Portfolio</a>
-            <a class="option" href="#contact">Contact</a>
+            <a class="option" href="#contact">Contact</a> -->
         </ul>
     </nav>
 
 </template>
 
 <script>
-
+export default {
+} 
 </script>
 
 <style scoped>
@@ -41,10 +49,10 @@
 .social__links {
     display: flex;
     margin: 0px;
-    padding-right: 40px;
-    padding-left: 0px;
+    padding-right: 1em;
+    padding-left: 1em;
     column-gap: 1em;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
     width: 100px;
@@ -53,7 +61,8 @@
 
 .options {
     display: flex;
-
+    padding-right: 1em;
+    padding-left: 1em;
     justify-content: center;
     margin: 0px;
     column-gap: 1em;
@@ -75,15 +84,20 @@
     color: #b1a4a4;
 }
 
+.active {
+    text-decoration: underline;
+    color: red;
+}
+
 .nav__icon {
     width: 100%;
     height: auto;
     align-items: center;
 }
 
-.option:active{
+.option:active {
     transform: scale(0.95);
-  
+
 }
 </style>
 

@@ -6,16 +6,16 @@
         <form class="contact__form" ref="form" @submit.prevent="sendEmail">
             <div class="name__email">
                 <div class="name__container">
-                    <label for="user_name">Name<Span style="color: red">*</Span></label>
+                    <label for="user_name">Name<Span style="color: #52b7bd">*</Span></label>
                     <input class="input__container" type="text" name="user_name" required>
                 </div>
                 <div>
-                    <label for="user_email">Email<Span style="color: red">*</Span></label>
+                    <label for="user_email">Email<Span style="color: #52b7bd">*</Span></label>
                     <input class="input__container" type="email" name="user_email" required>
                 </div>
             </div>
             <div class="message__container">
-                <label for="message">Message<Span style="color: red">*</Span></label>
+                <label for="message">Message<Span style="color: #52b7bd">*</Span></label>
                 <textarea class="message__input" name="message" required></textarea>
 
             </div>
@@ -59,10 +59,10 @@ export default {
 .contact__container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding-top: 5em;
     padding-bottom: 5em;
+    height: 90vh;
 }
 
 .contact__form {

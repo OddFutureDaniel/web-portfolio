@@ -9,9 +9,9 @@
                 </a>
             </div>
             <div class="card">
-                <h3>Netflix Clone</h3>
-                <a href="" target="_blank">
-                    <img src="../assets/netflixclone.png" alt="netflix clone">
+                <h3>Portfolio Website</h3>
+                <a href="https://github.com/OddFutureDaniel/web-portfolio" target="_blank">
+                    <img src="../assets/portfolio.png" alt="portfolio site">
                 </a>
             </div>
             <div class="card">
@@ -30,6 +30,9 @@
 .portfolio__container {
     padding-top: 5em;
     padding-bottom: 5em;
+    min-height: 90vh;
+    height: auto;
+
 }
 
 .card__container {
@@ -45,10 +48,14 @@
 .card {
     width: auto;
     height: auto;
-    padding: 1em;
+    padding: 1em; 
+    border-radius: 5px;
 }
 
 img {
     width: 20em;
+    border: 1px solid black;
+    border-radius: 5px;
 }
+
 </style>

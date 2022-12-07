@@ -17,11 +17,11 @@
 .about__section {
     display: flex;
     flex-direction: column;
-    height: auto;
-    justify-content: center;
     padding-top: 5em;
     padding-bottom: 5em;
     align-items: center;
+    height: 90vh;
+
 }
 
 .about__text {
