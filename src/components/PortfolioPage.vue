@@ -1,6 +1,7 @@
 <template>
     <div class="portfolio__container">
         <h1>Portfolio</h1>
+        <h4>Here lies a plethora of varied web development projects I have completed or which are currently in development. </h4>
         <div class="card__container">
             <div class="card">
                 <h3>Netflix Clone</h3>

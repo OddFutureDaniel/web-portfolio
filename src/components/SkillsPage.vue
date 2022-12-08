@@ -1,6 +1,7 @@
 <template>
     <div class="skills__container">
         <h1>Skills</h1>
+        <h4>I really don't like to boast... ok FINE if you really must know</h4>
         <div class="skill">
             <h3>HTML</h3>
             <div class="skill__bar">
@@ -41,6 +42,12 @@
             <h3>Java</h3>
             <div class="skill__bar">
                 <div class="java__progress"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>Basketball</h3>
+            <div class="skill__bar">
+                <div class="basketball__progress"></div>
             </div>
         </div>
     </div>
@@ -113,5 +120,9 @@ h3 {
 
 .java__progress {
     width: 75%;
+}
+
+.basketball__progress{
+    width: 120%;
 }
 </style>
