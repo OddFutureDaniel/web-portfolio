@@ -147,8 +147,8 @@ input.submit__box:active {
 
 @media (max-width: 600px) {
     .contact__form {
-        margin-left: 1em;
-        margin-right: 1em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
     }
 }
 </style>

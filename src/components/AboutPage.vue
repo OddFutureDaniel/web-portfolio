@@ -20,7 +20,7 @@
                 knew that this was the vein of development I wanted to explore more and spent the following summer and
                 beyond
                 burying myself into all things web development! Have a look at my 'Skills' page to see what different
-                web developemnt
+                web development
                 technologies I currently am comfortable in.
             </p>
         </div>

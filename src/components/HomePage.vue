@@ -28,6 +28,7 @@
     margin: 0;
     padding-top: 6em;
     padding-bottom: 7.8em;
+    z-index: 999;
 }
 
 .logo {
