@@ -67,6 +67,7 @@
     padding-top: 5em;
     padding-bottom: 5em;
     align-items: center;
+    min-height: 90vh;
     height: auto;
 
 }
