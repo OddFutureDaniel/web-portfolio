@@ -80,7 +80,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 70%;
+    width: 100%;
 }
 
 .name__container {
@@ -92,6 +92,7 @@ export default {
     background-color: #464d5d;
     color: white;
     border-style: none;
+    height: 30px;
 }
 
 .message__input {
@@ -99,8 +100,8 @@ export default {
     background-color: #464d5d;
     color: white;
     border-style: none;
-    width: 70%;
-    height: 8em;
+    width: 100%;
+    height: 10em;
     resize: none;
     min-width: 22em;
     max-width: 37em;
@@ -110,7 +111,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 85%;
+    width: 100%;
 }
 
 .submit__box {

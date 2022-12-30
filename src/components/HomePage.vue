@@ -109,7 +109,7 @@ body {
     top: -50%;
     left: 0;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #52b7bd 75%, #ffffff 100%);
-    animation: drop 5s 0s infinite;
+    animation: drop 3.5s 0s infinite;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
 }
@@ -119,7 +119,7 @@ body {
 }
 
 .line:nth-child(1)::after {
-    animation-delay: 1.8s;
+    animation-delay: 0.8s;
 }
 
 .line:nth-child(3) {
@@ -127,7 +127,7 @@ body {
 }
 
 .line:nth-child(3)::after {
-    animation-delay: 1.5s;
+    animation-delay: 0.5s;
 }
 
 .line:nth-child(4) {
@@ -143,7 +143,7 @@ body {
 }
 
 .line:nth-child(5)::after {
-    animation-delay: 2.5s;
+    animation-delay: 1s;
 }
 
 @keyframes drop {

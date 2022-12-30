@@ -60,7 +60,7 @@
 
 .option {
     text-decoration: none;
-    color: #b1a4a4;
+    color: #b4c8a8;
     font-weight: 200;
 }
 
@@ -69,7 +69,7 @@
     width: 30px;
     height: 30px;
     align-items: center;
-    color: #b1a4a4;
+    color: #b4c8a8;
 }
 
 .active {
