@@ -52,7 +52,7 @@
 
 
             </h4>
-            <a class="resume__link">
+            <a class="resume__link" href="https://oddfuturedaniel.github.io/" target="_blank">
                 <h4>CV/Resume</h4>
                 <font-awesome-icon class="cv_image" icon="fa-solid fa-file" />
             </a>
@@ -100,6 +100,7 @@
     border-radius: 7px;
     margin-right: 0px;
     margin-top: 2em;
+    text-decoration: none;
 }
 
 h4 {
@@ -203,6 +204,12 @@ h4 {
     100% {
         top: -2px;
 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about__text {
+        width: 65%;
     }
 }
 </style>

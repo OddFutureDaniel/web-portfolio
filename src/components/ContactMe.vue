@@ -145,10 +145,10 @@ input.submit__box:active {
     box-shadow: 3px 2px 10px 1px rgba(0, 0, 0, 0.25);
 }
 
-@media (max-width: 560px) {
+@media (max-width: 600px) {
     .contact__form {
-        padding-left: 0em;
-        padding-right: 0em;
+        margin-left: 1em;
+        margin-right: 1em;
     }
 }
 </style>

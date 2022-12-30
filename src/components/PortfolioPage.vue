@@ -60,4 +60,11 @@ img {
     border-radius: 5px;
 }
 
+@media screen and (max-width: 600px) {
+    h4{
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
+
 </style>
