@@ -8,6 +8,8 @@ FontAwesome
 
 EmailJS
 
+Hosted and deployed using Firebase 
+
 ## Project setup
 ```
 npm install
