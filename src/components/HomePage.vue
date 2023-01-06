@@ -1,5 +1,5 @@
 <template>
-    <div class="home__title" id="home">
+    <div class="home__title" >
         <h1>Daniel Rogerson</h1>
         <h3>Frontend Web Developer</h3>
         <img class="logo" src="../assets/errvv.png" alt="">
@@ -18,6 +18,7 @@
 
 <style scoped>
 .home__title {
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -28,7 +29,7 @@
     margin: 0;
     padding-top: 6em;
     padding-bottom: 7.8em;
-    z-index: 999;
+    z-index: 997;
 }
 
 .logo {
@@ -55,7 +56,7 @@
 .home__title h3 {
     margin-block-end: 0em;
     color: #52b7bd;
-    z-index: 999;
+    z-index: 998;
 }
 
 /* ------------------Droplet animation adapted by https://codepen.io/osorina ---------------------- */
@@ -87,7 +88,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 100%;
+    height: 100vh;
     margin: auto;
     width: 90vw;
 }

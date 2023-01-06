@@ -3,7 +3,7 @@
         <h1>Get in touch</h1>
         <p class="contact__text">Whether you'd like to discuss web development opportunities or try the world's best lemon drizzle, please get
             in touch using the form below! </p>
-        <form class="contact__form" ref="form" @submit.prevent="sendEmail">
+        <form class="contact__form" ref="form" @submit.prevent="sendEmail,sendAlert">
             <div class="name__email">
                 <div class="name__container">
                     <label for="user_name">Name<Span style="color: #52b7bd">*</Span></label>
@@ -50,6 +50,10 @@ export default {
                         console.log('FAILED...', error.text);
                     });
             }
+        },
+        sendAlert() {
+            this.$notify("Hello user!");
+
         }
     }
 }
@@ -149,6 +153,13 @@ input.submit__box:active {
     .contact__form {
         margin-left: 0.5em;
         margin-right: 0.5em;
+        padding-left: 0;
+        padding-right: 0;
+        width: 75%;
     }
 }
+/* TODO: 
+        >> create alert for successful email sent
+        >> clear form after sent email 
+        */
 </style>

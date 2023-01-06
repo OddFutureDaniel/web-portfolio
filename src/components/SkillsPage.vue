@@ -125,4 +125,11 @@ h3 {
 .basketball__progress{
     width: 120%;
 }
+
+@media (max-width: 600px) {
+   h4{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+   }
+}
 </style>
