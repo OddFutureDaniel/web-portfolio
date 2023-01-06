@@ -1,5 +1,8 @@
 # web-portfolio
 
+## View at:
+https://devwithdan.web.app/Home
+
 ## Technologies used
 
 VueJS making use of HTML, CSS and Javascript
@@ -7,6 +10,8 @@ VueJS making use of HTML, CSS and Javascript
 FontAwesome
 
 EmailJS
+
+Hosted and deployed using Firebase 
 
 ## Project setup
 ```
