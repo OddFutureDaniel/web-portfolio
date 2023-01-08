@@ -1,15 +1,17 @@
 <template>
     <div class="contact__container">
         <h1>Get in touch</h1>
-        <p class="contact__text">Whether you'd like to discuss web development opportunities or try the world's best lemon drizzle, please get
+        <p class="contact__text">Whether you'd like to discuss web development opportunities or try the world's best
+            lemon drizzle, please get
             in touch using the form below! </p>
-        <form class="contact__form" ref="form" @submit.prevent="sendEmail,sendAlert">
+        <notifications />
+        <form class="contact__form" ref="form" id="contactForm" @submit.prevent="sendEmail">
             <div class="name__email">
                 <div class="name__container">
                     <label for="user_name">Name<Span style="color: #52b7bd">*</Span></label>
                     <input class="input__container" type="text" name="user_name" required>
                 </div>
-                <div>
+                <div class="email__container">
                     <label for="user_email">Email<Span style="color: #52b7bd">*</Span></label>
                     <input class="input__container" type="email" name="user_email" required>
                 </div>
@@ -25,9 +27,9 @@
         </form>
     </div>
 </template>
-  
 <script>
 import emailjs from '@emailjs/browser';
+import $ from 'jquery';
 
 export default {
     data() {
@@ -49,13 +51,15 @@ export default {
                     }, (error) => {
                         console.log('FAILED...', error.text);
                     });
+                    this.sendAlert()
             }
         },
         sendAlert() {
-            this.$notify("Hello user!");
-
+            $("#contactForm").trigger("reset");
+            $(alert("The message has been Submitted."));
         }
-    }
+    },
+
 }
 </script>
 
@@ -87,8 +91,10 @@ export default {
     width: 100%;
 }
 
-.name__container {
-    margin-right: 1em;
+.name__container,
+.email__container {
+    display: flex;
+    flex-direction: column;
 }
 
 .input__container {
@@ -133,7 +139,7 @@ label {
     padding-right: 0.2em;
 }
 
-.contact__text{
+.contact__text {
     width: 80%;
 }
 
@@ -158,6 +164,7 @@ input.submit__box:active {
         width: 75%;
     }
 }
+
 /* TODO: 
         >> create alert for successful email sent
         >> clear form after sent email 

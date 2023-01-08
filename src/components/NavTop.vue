@@ -156,7 +156,7 @@ export default {
 
     .burger {
         width: 2rem;
-        height: 0.17rem;
+        height: 0.25rem;
         border-radius: 5px;
         background-color: #b4c8a8;
         transform-origin: 1px;

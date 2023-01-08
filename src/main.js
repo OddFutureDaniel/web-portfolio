@@ -2,7 +2,6 @@ import { createApp} from "vue";
 import App from "./App.vue";
 import FontAwesomeIcon from "@/utilities/fontawesome-icons.ts";
 import router from "./router";
-import Notifications from '@kyvg/vue3-notification'
+import $ from 'jquery'
 
-
-createApp(App).use(router,Notifications).component("FontAwesomeIcon",FontAwesomeIcon).mount("#app");
+createApp(App).use(router,$).component("FontAwesomeIcon",FontAwesomeIcon).mount("#app");

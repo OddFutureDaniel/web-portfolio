@@ -210,7 +210,7 @@ h4 {
 
 @media screen and (max-width: 600px) {
     .about__text {
-        width: 65%;
+        width: 75%;
     }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <NavTop />
-  <router-view />
   <notifications />
+  <router-view />
   <FooterPage />
 </template>
 
