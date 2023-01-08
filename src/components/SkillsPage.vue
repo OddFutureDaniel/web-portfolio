@@ -33,9 +33,21 @@
             </div>
         </div>
         <div class="skill">
+            <h3>JQuery</h3>
+            <div class="skill__bar">
+                <div class="jquery__progress"></div>
+            </div>
+        </div>
+        <div class="skill">
             <h3>PHP</h3>
             <div class="skill__bar">
                 <div class="php__progress"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>MySQL</h3>
+            <div class="skill__bar">
+                <div class="mysql__progress"></div>
             </div>
         </div>
         <div class="skill">
@@ -50,10 +62,16 @@
                 <div class="basketball__progress"></div>
             </div>
         </div>
+        
     </div>
 </template>
 
-<script></script>
+<script>
+export default{
+   
+    
+}
+</script>
 
 <style scoped>
 .skills__container {
@@ -114,8 +132,16 @@ h3 {
     width: 40%;
 }
 
+.jquery__progress{
+    width: 50%;
+}
+
 .php__progress {
     width: 20%;
+}
+
+.mysql__progress{
+    width: 50%;
 }
 
 .java__progress {

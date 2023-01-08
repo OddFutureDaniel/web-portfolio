@@ -56,9 +56,10 @@ export default {
         },
         sendAlert() {
             $("#contactForm").trigger("reset");
-            $(alert("The message has been Submitted."));
+            $(alert("Success! I'll be sure to get back to you shortly."));
         }
     },
+    
 
 }
 </script>
