@@ -5,7 +5,7 @@ https://devwithdan.web.app/Home
 
 ## Technologies used
 
-VueJS making use of HTML, CSS and Javascript
+VueJS making use of HTML, CSS, JQuery and Javascript
 
 FontAwesome
 
