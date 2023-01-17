@@ -8,6 +8,10 @@ import ExtraPage from '../components/ExtraPage.vue'
 
 const routes = [
   {
+    path:'/',
+    redirect:'/Home'
+  },
+  {
     path: "/home",
     name: "Home",
     component: HomePage,

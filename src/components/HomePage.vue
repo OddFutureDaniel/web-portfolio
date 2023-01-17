@@ -59,7 +59,7 @@ export default{
 
 .home__title h3 {
     margin-block-end: 0em;
-    color: #52b7bd;
+    color: #81d8d0;
     z-index: 998;
 }
 

@@ -8,16 +8,16 @@
         <form class="contact__form" ref="form" id="contactForm" @submit.prevent="sendEmail">
             <div class="name__email">
                 <div class="name__container">
-                    <label for="user_name">Name<Span style="color: #52b7bd">*</Span></label>
+                    <label for="user_name">Name<Span style="color: #81d8d0">*</Span></label>
                     <input class="input__container" type="text" name="user_name" required>
                 </div>
                 <div class="email__container">
-                    <label for="user_email">Email<Span style="color: #52b7bd">*</Span></label>
+                    <label for="user_email">Email<Span style="color: #81d8d0">*</Span></label>
                     <input class="input__container" type="email" name="user_email" required>
                 </div>
             </div>
             <div class="message__container">
-                <label for="message">Message<Span style="color: #52b7bd">*</Span></label>
+                <label for="message">Message<Span style="color: #81d8d0">*</Span></label>
                 <textarea class="message__input" name="message" required></textarea>
 
             </div>

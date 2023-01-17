@@ -79,7 +79,7 @@ export default{
     flex-direction: column;
     padding-top: 5em;
     padding-bottom: 5em;
-    height: 90vh;
+    height: auto;
 
 }
 

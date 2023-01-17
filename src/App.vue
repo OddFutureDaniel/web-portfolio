@@ -1,6 +1,5 @@
 <template>
   <NavTop />
-  <notifications />
   <router-view />
   <FooterPage />
 </template>
