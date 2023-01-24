@@ -1,7 +1,7 @@
 # web-portfolio
 
 ## View at:
-https://devwithdan.web.app/Home
+www.danielweb.dev
 
 ## Technologies used
 
