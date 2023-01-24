@@ -4,13 +4,13 @@
         <h4>Here lies a plethora of varied web development projects I have completed or which are currently in development. </h4>
         <div class="card__container">
             <div class="card">
-                <h3>Netflix Clone</h3>
+                <h3>React Netflix Clone</h3>
                 <a href="https://github.com/OddFutureDaniel/netflix-clone" target="_blank">
                     <img src="../assets/netflixclone.png" alt="netflix clone">
                 </a>
             </div>
             <div class="card">
-                <h3>Portfolio Website</h3>
+                <h3>VueJS Portfolio Website</h3>
                 <a href="https://github.com/OddFutureDaniel/web-portfolio" target="_blank">
                     <img src="../assets/portfolio.png" alt="portfolio site">
                 </a>
@@ -19,6 +19,12 @@
                 <h3>Restaurant Website</h3>
                 <a href="https://github.com/OddFutureDaniel/theCups" target="_blank">
                     <img src="../assets/thecups.png" alt="Restaurant Website">
+                </a>
+            </div>
+            <div class="card">
+                <h3>React Card Payment Component</h3>
+                <a href="https://github.com/OddFutureDaniel/CreditCardFormComponent" target="_blank">
+                    <img src="../assets/carpayment.png" alt="React Card Payment Component">
                 </a>
             </div>
         </div>
@@ -37,6 +43,9 @@ export default{
     padding-bottom: 5em;
     min-height: 90vh;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -48,6 +57,7 @@ export default{
     justify-content: space-around;
     height: auto;
     margin: 0;
+    width: 80%
 }
 
 .card {
