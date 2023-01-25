@@ -80,7 +80,7 @@ export default{
     padding-top: 5em;
     padding-bottom: 5em;
     height: auto;
-
+    width: 80%;
 }
 
 .skill {

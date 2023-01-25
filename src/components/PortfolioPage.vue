@@ -2,38 +2,48 @@
     <div class="portfolio__container">
         <h1>Portfolio</h1>
         <h4>Here lies a plethora of varied web development projects I have completed or which are currently in development. </h4>
-        <div class="card__container">
-            <div class="card">
-                <h3>React Netflix Clone</h3>
-                <a href="https://github.com/OddFutureDaniel/netflix-clone" target="_blank">
-                    <img src="../assets/netflixclone.png" alt="netflix clone">
-                </a>
-            </div>
-            <div class="card">
-                <h3>VueJS Portfolio Website</h3>
-                <a href="https://github.com/OddFutureDaniel/web-portfolio" target="_blank">
-                    <img src="../assets/portfolio.png" alt="portfolio site">
-                </a>
-            </div>
-            <div class="card">
-                <h3>Restaurant Website</h3>
-                <a href="https://github.com/OddFutureDaniel/theCups" target="_blank">
-                    <img src="../assets/thecups.png" alt="Restaurant Website">
-                </a>
-            </div>
-            <div class="card">
-                <h3>React Card Payment Component</h3>
-                <a href="https://github.com/OddFutureDaniel/CreditCardFormComponent" target="_blank">
-                    <img src="../assets/carpayment.png" alt="React Card Payment Component">
-                </a>
-            </div>
+        <div class="carousel_container">
+            <carousel :items-to-show="1.5" :wrap-around="true">
+                <slide class="slidee" v-for="slide in slides" :key="slide.id">
+                    <h3>{{ slide.title }}</h3>
+                    <div class="carousel__item">
+                        <a :href="slide.href" target="_blank">
+                            <img class="slideIMG" :src="require('../assets/' + slide.src)" alt="jj">
+                        </a>
+                    </div>
+                </slide>
+                <template #addons>
+                    <navigation />
+                    <pagination />
+                </template>
+            </carousel>
         </div>
     </div>
 </template>
 
 <script>
-export default{
-   
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+
+export default {
+    data() {
+        return {
+            slides: [
+                { id: '1', title: 'React Netflix Clone', src: "netflixclone.png", href: "https://github.com/OddFutureDaniel/netflix-clone" },
+                { id: '2', title: 'VueJS Portfolio Website', src: "portfolio.png", href: "https://github.com/OddFutureDaniel/web-portfolio" },
+                { id: '3', title: 'Restaurant Website', src: "thecups.png", href: "https://github.com/OddFutureDaniel/theCups" },
+                { id: '4', title: 'React Card Payment Component', src: "carpayment.png", href: "https://github.com/OddFutureDaniel/CreditCardFormComponent" },
+            ]
+        }
+    },
+    name: 'App',
+    components: {
+        Carousel,
+        Slide,
+        Pagination,
+        Navigation,
+    },
+
 }
 </script>
 
@@ -46,38 +56,63 @@ export default{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    width: 100vw;
 }
 
-.card__container {
+.extra__container {
+    min-height: 100vh;
+    height: 90vh;
+    width: 100vw;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: auto;
-    margin: 0;
-    width: 80%
+    justify-content: center;
 }
 
-.card {
-    width: auto;
+.carousel_container {
     height: auto;
-    padding: 1em; 
-    border-radius: 5px;
+    width: 40em;
 }
 
-img {
-    width: 20em;
-    height: 180px;
-    border: 1px solid black;
-    border-radius: 5px;
+.carousel__item {
+    min-height: 220px;
+    max-height: 220px;
+    width: 90%;
+    color: #000000;
+    font-size: 0.9em;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.carousel__slide {
+    padding: 10px;
+}
+
+.slideIMG {
+    width: 100%;
+    height: 100%;
+    max-height: 270px;
+}
+
+.slidee {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 600px) {
     h4{
         margin-left: 2em;
         margin-right: 2em;
+    }
+
+    .carousel_container{
+     width: 24em;
+    }
+
+    .carousel__item{
+        min-height: 130px;
     }
 }
 

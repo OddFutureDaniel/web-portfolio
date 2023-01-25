@@ -26,6 +26,10 @@ export default {
   color: #b4c8a8;
   height: auto;
   overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 body {
