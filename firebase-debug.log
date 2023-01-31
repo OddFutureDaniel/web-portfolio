@@ -1,0 +1,33 @@
+[debug] [2023-01-31T13:03:11.329Z] ----------------------------------------------------------------------
+[debug] [2023-01-31T13:03:11.331Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2023-01-31T13:03:11.331Z] CLI Version:   11.19.0
+[debug] [2023-01-31T13:03:11.331Z] Platform:      darwin
+[debug] [2023-01-31T13:03:11.331Z] Node Version:  v16.17.1
+[debug] [2023-01-31T13:03:11.332Z] Time:          Tue Jan 31 2023 13:03:11 GMT+0000 (Greenwich Mean Time)
+[debug] [2023-01-31T13:03:11.333Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-31T13:03:11.337Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-01-31T13:03:11.414Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-31T13:03:11.414Z] > authorizing via signed-in user (drootsprofi@gmail.com)
+[debug] [2023-01-31T13:03:11.414Z] [iam] checking project webdevdan-9d875 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-31T13:03:11.415Z] > refreshing access token with scopes: []
+[debug] [2023-01-31T13:03:11.416Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-01-31T13:03:11.417Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-31T13:03:12.175Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-01-31T13:03:12.175Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-01-31T13:03:12.254Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdevdan-9d875:testIamPermissions [none]
+[debug] [2023-01-31T13:03:12.254Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdevdan-9d875:testIamPermissions x-goog-quota-user=projects/webdevdan-9d875
+[debug] [2023-01-31T13:03:12.255Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdevdan-9d875:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-31T13:03:13.342Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-01-31T13:03:13.343Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-01-31T13:03:14.138Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdevdan-9d875:testIamPermissions 200
+[debug] [2023-01-31T13:03:14.138Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/webdevdan-9d875:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-31T13:03:14.140Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webdevdan-9d875 [none]
+[debug] [2023-01-31T13:03:14.524Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webdevdan-9d875 200
+[debug] [2023-01-31T13:03:14.525Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webdevdan-9d875 {"projectId":"webdevdan-9d875","projectNumber":"280309136310","displayName":"webdevdan","name":"projects/webdevdan-9d875","resources":{"hostingSite":"webdevdan-9d875"},"state":"ACTIVE","etag":"1_8a2908ba-07f5-49e5-bf50-c7047f9df2bd"}
+[info] 
+[info] === Deploying to 'webdevdan-9d875'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-01-31T13:03:14.532Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/devwithdan/versions [none]
+[debug] [2023-01-31T13:03:14.532Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/devwithdan/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}

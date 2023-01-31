@@ -113,23 +113,23 @@ h3 {
 }
 
 .html__progress {
-    width: 90%;
+    width: 95%;
 }
 
 .css__progress {
-    width: 85%;
+    width: 90%;
 }
 
 .js__progress {
-    width: 75%;
+    width: 80%;
 }
 
 .vue__progress {
-    width: 70%;
+    width: 87%;
 }
 
 .react__progress {
-    width: 40%;
+    width: 50%;
 }
 
 .jquery__progress{

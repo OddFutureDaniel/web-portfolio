@@ -88,7 +88,7 @@ export default {
 .name__email {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
 }
 
